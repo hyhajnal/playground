@@ -1,0 +1,19 @@
+{
+  "name": "vue-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "vue": "^2.6.12",
+    "vue-server-renderer": "^2.6.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
