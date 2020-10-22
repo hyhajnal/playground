@@ -1,24 +1,11 @@
 # vue-cli-ssr
 
-## Project setup
+### 执行打包
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+npm run build
 ```
 
-### Compiles and minifies for production
+### 启动SSR
 ```
-yarn build
+npm run dev:ssr
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

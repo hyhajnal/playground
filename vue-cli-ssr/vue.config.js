@@ -14,22 +14,23 @@ module.exports = {
     entry: `./src/entry-${target}.js`, // 将 entry 指向应用程序的 server / client 文件
     devtool: 'source-map',
     target: TARGET_NODE ? 'node' : 'web',
-    node: TARGET_NODE ? undefined : false,
+    node: TARGET_NODE ? undefined : false, // 关闭对node变量/模块的polyfill
     output: {
       libraryTarget: TARGET_NODE ? 'commonjs2' : undefined
     },
-    externals: TARGET_NODE
-      ? nodeExternals({
-        allowlist: [/\.css$/]
-      })
-      : undefined,
+    externals: TARGET_NODE ? nodeExternals({
+      allowlist: [/\.css$/]
+    }) : undefined,
+
     // 避免在服务器配置中使用CommonsChunkPlugin
     optimization: {
       splitChunks: TARGET_NODE ? false : undefined
     },
     plugins: [TARGET_NODE ? new VueSSRServerPlugin() : new VueSSRClientPlugin()]
   }),
+
   chainWebpack: config => {
+    // 关闭vue-loader中默认的服务器端渲染函数
     config.module
       .rule('vue')
       .use('vue-loader')
