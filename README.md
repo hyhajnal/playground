@@ -8,3 +8,4 @@
 | vue-cli-ssr | Vue Cli 创建的项目接入 SSR | ssr
 | vue-to-xcx | Vue 转换 小程序 | vue / xcx
 | ts-node-template | ts-node 模版 | ts
+| ts-promise | 实现一个 ts 版的 promise | ts / promise
