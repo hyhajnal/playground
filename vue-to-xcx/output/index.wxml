@@ -1,0 +1,7 @@
+<view class="Test {{__vx_class}}" style="{{__vx_style}}">
+  <block wx:if="{{list}}">
+    <view wx:for="{{list}}" wx:for-item="item" wx:for-index="__key_0" wx:key="item" class="item">
+      {{item}}
+    </view>
+  </block>
+</view>

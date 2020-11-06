@@ -4,11 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx babel-node index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "deepcopy": "^2.1.0",
+    "js-beautify": "^1.13.0",
+    "less": "^3.12.2",
+    "postcss": "^8.1.4",
+    "postcss-bem-fix": "^2.1.0",
+    "postcss-calc": "^7.0.5",
+    "precss": "^4.0.0",
     "vue-template-compiler": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1"
   }
 }

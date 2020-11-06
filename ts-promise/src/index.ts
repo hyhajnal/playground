@@ -54,7 +54,7 @@ export class MyPromise {
      * @param onFullFilled 
      * @param onRejected 
      */
-    public then(onFullFilled?, onRejected?) {
+    public then(onFullFilled?: any, onRejected?: any) {
 
         // 缺省值
         const _onFullFilled = typeof onFullFilled === 'function' ? onFullFilled : v => v;
