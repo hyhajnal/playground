@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .pageWrap {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            overflow: scroll;
+        }
+        .artboardBg {
+            position: relative;
+            width: 10000px;
+            height: 10000px;
+            background: url(https://s10.mogucdn.com/mlcdn/c45406/180112_6ja24je6ab75k69kd95dk320c806f_44x44.png);
+        }
+        .artboard {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 375px;
+            height: 667px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="pageWrap" id="pageWrap">
+        <div class="artboardBg" id="artboardBg">
+            <div class="artboard" id="artboard"></div>
+        </div>
+    </div>
+
+    <script>
+        const boardHeight = 667
+        const bgHeight = 10000
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollTop = (bgHeight - window.innerHeight) / 2
+            const scrollLeft = (bgHeight - window.innerWidth) / 2
+            document.getElementById('pageWrap').scrollTo(scrollLeft, scrollTop)
+        })
+    </script>
+</body>
+</html>
