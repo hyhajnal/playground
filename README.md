@@ -12,3 +12,4 @@
 | ts-promise | 实现一个 ts 版的 promise | ts / promise
 | vue3-demo | vue3尝鲜 | vue3
 | artboard-display | 画板展示 | ui
+| 3d-house | 3D看房 | three.js / vite
